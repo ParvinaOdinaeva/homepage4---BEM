@@ -1,0 +1,20 @@
+.header__title {
+    color: rgb(12, 11, 12);
+    background-color: rgb(246, 255, 255);
+    font-weight: normal;
+    font-style: italic;
+    margin: auto;
+    text-shadow: 0px 2px 12px rgba(14, 189, 233, 0.47);
+}
+
+.header__navigation {
+    font-family: 'Source Serif 4', sans-serif;
+    font-style: italic;
+    border-bottom: 5px solid rgb(157, 157, 231);
+    margin: auto;
+}
+
+.header__navigation--style {
+    list-style: none;
+    margin: 5px;
+}

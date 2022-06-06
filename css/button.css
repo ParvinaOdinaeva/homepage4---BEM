@@ -1,0 +1,22 @@
+.button {
+    padding: 5px;
+    margin: auto;
+    font-weight: bold;
+    border: none;
+}
+
+.button__inAddition {
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.6;
+    border: 3px solid rgb(127, 131, 130);
+    border-radius: 15px;
+    margin: auto;
+    padding: 5px;
+    text-align: justify;
+    box-shadow: 0px 0px 14px 1px #cae8f0;
+}
+
+.button__listItem {
+    list-style-type: decimal-leading-zero;
+}
