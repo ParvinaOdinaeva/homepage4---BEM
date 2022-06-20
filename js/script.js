@@ -1,21 +1,21 @@
-{
-    const welcome = () => {
+{ //blok
+    const welcome = () => { //funkcja która zajmuje się przewitaniem
         console.log("Dzień dobry wszystkim!");
     }
     welcome();
 
-    const toggleBackground = () => {
+    const toggleBackground = () => { // funkcja która zajmuje się przełączeniem
         let body = document.querySelector(".body");
         let theme = document.querySelector(".theme");
         body.classList.toggle("dark");
         theme.innerText = body.classList.contains("dark") ? "jasne" : "ciemne";
     }
 
-    const init = () => {
+    const init = () => { // główna funkcja która odpala się na samym początku
         let tlo = document.querySelector(".tlo");
         tlo.addEventListener("click", toggleBackground);
     }
-    init();
+    init(); // wywołanie głównej funkcji
 }
 
 {
