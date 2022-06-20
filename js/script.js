@@ -4,7 +4,7 @@
     }
     welcome();
 
-    const backgroundButtonClick = () => {
+    const toggleBackground = () => {
         let body = document.querySelector(".body");
         let theme = document.querySelector(".theme");
         body.classList.toggle("dark");
@@ -13,7 +13,7 @@
 
     const init = () => {
         let tlo = document.querySelector(".tlo");
-        tlo.addEventListener("click", backgroundButtonClick);
+        tlo.addEventListener("click", toggleBackground);
     }
     init();
 }
