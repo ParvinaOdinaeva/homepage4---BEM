@@ -3,6 +3,7 @@
     margin: auto;
     font-weight: bold;
     border: none;
+    cursor: pointer;
 }
 
 .button__inAddition {

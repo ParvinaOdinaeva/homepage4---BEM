@@ -5,15 +5,15 @@
     welcome();
 
     const toggleBackground = () => { // funkcja która zajmuje się przełączeniem
-        let body = document.querySelector(".body");
+        let body = document.querySelector(".js-body");
         let theme = document.querySelector(".theme");
         body.classList.toggle("dark");
         theme.innerText = body.classList.contains("dark") ? "jasne" : "ciemne";
     }
 
     const init = () => { // główna funkcja która odpala się na samym początku
-        let tlo = document.querySelector(".tlo");
-        tlo.addEventListener("click", toggleBackground);
+        let background = document.querySelector(".background");
+        background.addEventListener("click", toggleBackground);
     }
     init(); // wywołanie głównej funkcji
 }
