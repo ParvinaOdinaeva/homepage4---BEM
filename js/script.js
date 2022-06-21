@@ -1,34 +1,38 @@
-{ //blok
-    const welcome = () => { //funkcja która zajmuje się przewitaniem
+{
+    const welcome = () => {
         console.log("Dzień dobry wszystkim!");
     }
     welcome();
 
-    const toggleBackground = () => { // funkcja która zajmuje się przełączeniem
+
+    const toggleBackground = () => {
         let body = document.querySelector(".js-body");
         let theme = document.querySelector(".theme");
         body.classList.toggle("dark");
         theme.innerText = body.classList.contains("dark") ? "jasne" : "ciemne";
     }
 
-    const init = () => { // główna funkcja która odpala się na samym początku
+
+    const init = () => {
         let background = document.querySelector(".background");
         background.addEventListener("click", toggleBackground);
     }
-    init(); // wywołanie głównej funkcji
+    init();
 }
 
-{
-    let button = document.querySelector(".button");
-    let note = document.querySelector(".note");
-    let word = document.querySelector(".word");
 
-    button.addEventListener("click", () => {
+{
+    const hideButton = () => {
+        let note = document.querySelector(".note");
+        let word = document.querySelector(".word");
         note.classList.toggle("hide");
-        if (note.classList.contains("hide")) {
-            word.innerText = "Pokaż:";
-        } else {
-            word.innerText = "Ukryj:";
-        }
-    });
+        word.innerText = note.classList.contains("hide") ? "Ukryj:" : "Pokaż:";
+    }
+
+    const init = () => {
+        let button = document.querySelector(".button");
+        button.addEventListener("click", hideButton);
+    }
+    init();
+
 }
