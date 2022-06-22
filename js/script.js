@@ -1,10 +1,10 @@
+
+const welcome = () => {
+    console.log("Dzień dobry wszystkim!");
+}
+welcome();
+
 {
-    const welcome = () => {
-        console.log("Dzień dobry wszystkim!");
-    }
-    welcome();
-
-
     const toggleBackground = () => {
         let body = document.querySelector(".js-body");
         let theme = document.querySelector(".theme");
@@ -26,7 +26,7 @@
         let note = document.querySelector(".note");
         let word = document.querySelector(".word");
         note.classList.toggle("hide");
-        word.innerText = note.classList.contains("hide") ? "Ukryj:" : "Pokaż:";
+        word.innerText = note.classList.contains("hide") ? "Pokaż:" : "Ukryj:";
     }
 
     const init = () => {
